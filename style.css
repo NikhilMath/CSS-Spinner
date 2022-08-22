@@ -5,3 +5,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.spinner {
+  height: 120px;
+  width: 120px;
+  border: 1rem solid;
+  border-color: white transparent white transparent;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
